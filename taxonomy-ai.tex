@@ -21,53 +21,53 @@
 		node[concept] {Intelligence Artificielle}
 		[clockwise from=45]
 		child[concept color=green!60!black] {
-			node[concept] {Données}
+			node[concept] (data) {Données}
 			[clockwise from=180]
-			child { node[concept] {Structurées} }
-			child { node[concept] {Capteurs} }
-			child { node[concept] {Temporelles} }
-			child { node[concept] {Textuelles} }
-			child { node[concept] {Incertaines} }
+			child { node[concept] (tab) {Structurées} }
+			child { node[concept] (capt) {Capteurs} }
+			child { node[concept] (temp) {Temporelles} }
+			child { node[concept] (text) {Textuelles} }
+			child { node[concept] (datunc) {Incertaines} }
 		}
 		child[concept color=blue!70!black, sibling angle=72] {
-			node[concept] {Domaines}
+			node[concept] (domains) {Domaines}
 			[clockwise from=45]
-			child { node[concept,font=\footnotesize] {Administration} }
-			child { node[concept] {Sciences et Génie} }
-			child { node[concept] {Sciences Humaines} }
-			child { node[concept] {Sciences du Vivant} }
+			child { node[concept,font=\footnotesize] (adm) {Administration} }
+			child { node[concept] (sg) {Sciences et Génie} }
+			child { node[concept] (sh) {Sciences Humaines} }
+			child { node[concept] (sv) {Sciences du Vivant} }
 		}
 		child[concept color=red!70!black, sibling angle=72] {
-			node[concept] {Objectifs}
+			node[concept] (objs) {Objectifs}
 			[clockwise from=-25]
-			child { node[concept] {Décrire} }
-			child[sibling angle=50] { node[concept] {Prédire} }
-			child[sibling angle=50] { node[concept] {Optimiser} }
-			child[sibling angle=50] { node[concept] {Prescrire} }
+			child { node[concept] (dec) {Décrire} }
+			child[sibling angle=50] { node[concept] (pred) {Prédire} }
+			child[sibling angle=50] { node[concept] (opt) {Optimiser} }
+			child[sibling angle=50] { node[concept] (pres) {Prescrire} }
 		}
 		child[concept color=purple!70!black, sibling angle=72] { 
-			node[concept] {Modèles} 
+			node[concept] (models) {Modèles} 
 			[clockwise from=-30]
-			child { node[concept] {Graphiques} }
+			child { node[concept] (graph) {Graphiques} }
 			child[concept color=gray] { 
-				node[concept, font=\footnotesize] {Apprentissage Automatique} 
+				node[concept, font=\footnotesize] (ml) {Apprentissage Automatique} 
 				[clockwise from=-100]
-				child { node[concept] {Supervisé} }
-				child { node[concept] {Non-supervisé} }
-				child { node[concept] {Par Renforcement} }
+				child { node[concept] (sup) {Supervisé} }
+				child { node[concept] (nsup) {Non-supervisé} }
+				child { node[concept] (rl) {Par Renforcement} }
 			}
-			child { node[concept] {Systèmes Experts} }
-			child { node[concept] {Statistiques} }
+			child { node[concept] (se) {Systèmes Experts} }
+			child { node[concept] (stat) {Statistiques} }
 		}
 		child[concept color=yellow!70!black, sibling angle=68] { 
-			node[concept] {Théorie} 
+			node[concept] (theory) {Théorie} 
 			[clockwise from=-90]
-			child { node[concept] {Explicabilité} }
-			child { node[concept] {Robustesse} }
-			child { node[concept] {Incertitude} }
-			child { node[concept] {Certification} }
-			child { node[concept] {Éthique} }
+			child { node[concept] (expl) {Explicabilité} }
+			child { node[concept] (rob) {Robustesse} }
+			child { node[concept] (theunc) {Incertitude} }
+			child { node[concept] (cert) {Certification} }
+			child { node[concept] (eth) {Éthique} }
 		};
-	\end{tikzpicture}
+\end{tikzpicture}
 
 \end{document}
